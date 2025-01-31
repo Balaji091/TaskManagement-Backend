@@ -13,7 +13,7 @@ const updateTaskStatus=require('./changeStatus')
 app.use(cors());
 app.use(express.json()); // Using express.json() for parsing JSON request bodies
 
-// Routes
+// Routes                                                                                                                                                                       
 app.post('/register', register); // Correct route for registering
 app.post('/login', login); 
 app.get('/users', verifyToken, getAllUsers); 
